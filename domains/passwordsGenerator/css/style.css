@@ -1,0 +1,108 @@
+body {
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+body a {
+  color: #00aeef;
+  text-decoration: none;
+}
+body a:hover {
+  text-decoration: underline;
+}
+body .pull-left {
+  float: left;
+}
+body .pull-right {
+  float: right;
+}
+body .mainContainer {
+  width: 80%;
+  margin: 0px auto;
+}
+body .mainContainer .outputContainer {
+  overflow: auto;
+}
+body .mainContainer .outputContainer .settings {
+  width: 25%;
+  float: left;
+  padding: 0.5em;
+  box-sizing: border-box;
+}
+body .mainContainer .outputContainer .settings form {
+  display: table;
+  width: 100%;
+}
+body .mainContainer .outputContainer .settings form div.input {
+  display: table-row;
+}
+body .mainContainer .outputContainer .settings form div.input label {
+  display: table-cell;
+}
+body .mainContainer .outputContainer .settings form div.input input {
+  display: table-cell;
+  float: right;
+}
+body .mainContainer .outputContainer .settings form div.input input.numberField {
+  width: 50px;
+  padding: 0.4em 0.2em;
+}
+body .mainContainer .outputContainer .settings form div.input input.submit-button {
+  width: 100%;
+  margin-top: 1em;
+}
+body .mainContainer .outputContainer .settings form div.input.caption {
+  caption-side: bottom;
+  display: table-caption;
+}
+body .mainContainer .outputContainer .output {
+  width: 75%;
+  float: right;
+  display: block;
+  padding: 0.5em;
+  box-sizing: border-box;
+}
+body .mainContainer .outputContainer .output .outputTextarea {
+  background-color: #eaeaea;
+  margin: 0.5em;
+  border: 1px solid #00aeef;
+  padding: 0.4em;
+}
+body .btn {
+  cursor: pointer;
+  padding: 1em;
+}
+body .btn-primary {
+  border: 1px solid #00aeef;
+  color: black;
+  background-color: #eaeaea;
+}
+body input {
+  border: 1px solid #00aeef;
+  color: black;
+  background-color: #eaeaea;
+}
+body .error-message {
+  border: 1px solid red;
+  background-color: #ffebeb;
+  color: red;
+  padding: 1em 2em;
+  margin: 0.5em;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 0) and (max-width: 50.063em) {
+  body .mainContainer h1 {
+    text-align: center;
+  }
+  body .mainContainer .outputContainer .settings {
+    width: 100%;
+    float: left;
+  }
+  body .mainContainer .outputContainer .output {
+    width: 100%;
+    float: left;
+  }
+}

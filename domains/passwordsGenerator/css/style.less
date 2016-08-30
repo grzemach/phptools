@@ -1,0 +1,105 @@
+@import "../../shared/default";
+
+body{
+  .mainContainer {
+    width: 80%;
+    margin: 0px auto;
+    .outputContainer {
+      overflow: auto;
+      .settings{
+        width: 25%;
+        float: left;
+        padding: 0.5em;
+        box-sizing: border-box;
+        form {
+          display: table;
+          width: 100%;
+          div.input {
+            display: table-row;
+            label {
+              display: table-cell;
+            }
+            input {
+              display: table-cell;
+              float: right;
+              &.numberField {
+                width: 50px;
+                padding: 0.4em 0.2em;
+              }
+              &.submit-button{
+                width: 100%;
+                margin-top: 1em;
+              }
+            }
+            &.caption{
+              caption-side: bottom;
+              display: table-caption;
+            }
+          }
+        }
+      }
+      .output {
+        width: 75%;
+        float: right;
+        display: block;
+        padding: 0.5em;
+        box-sizing: border-box;
+        .outputTextarea{
+          background-color: #eaeaea;
+          margin: 0.5em;
+          border: 1px solid @border-primary-color;
+          padding: 0.4em;
+        }
+      }
+    }
+  }
+  .btn{
+    cursor: pointer;
+    padding: 1em;
+  }
+  .btn-primary{
+    border: 1px solid @border-primary-color;
+    color: @btn-primary-color;
+    background-color: @btn-background-primary-color;
+    &:hover{
+      //border: @border-color;
+      //color: @btn-color;
+      //background-color: @primary-btn-color;
+    }
+  }
+  input{
+    border: 1px solid @border-primary-color;
+    color: @btn-primary-color;
+    background-color: @btn-background-primary-color;
+  }
+  .error-message{
+    border: 1px solid red;
+    background-color: lighten(red,46%);
+    color: red;
+    padding: 1em 2em;
+    margin: 0.5em;
+    box-sizing: border-box;
+  }
+}
+
+// responsive
+
+@media screen and(min-width: 0) and(max-width: @tablet) {
+  body {
+    .mainContainer {
+      h1{
+        text-align: center;
+      }
+      .outputContainer {
+        .settings {
+          width: 100%;
+          float: left;
+        }
+        .output {
+          width: 100%;
+          float: left;
+        }
+      }
+    }
+  }
+}
